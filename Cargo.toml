@@ -1,0 +1,10 @@
+[package]
+name = "seldom_enum_run"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+bevy = { version = "0.14.0", default-features = false }
+seldom_enum_run_macros = { path = "macros" }
