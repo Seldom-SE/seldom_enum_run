@@ -5,6 +5,7 @@ use bevy::{ecs::world::Command, prelude::*};
 use serde::{Deserialize, Serialize};
 
 pub use anyhow::Result;
+pub use seldom_enum_run_macros::EnumRun;
 
 pub struct EnumRunPlugin<R: EnumRun>(PhantomData<R>);
 
