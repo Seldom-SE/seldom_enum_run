@@ -240,7 +240,7 @@ fn inner(input: TokenStream) -> Result<TokenStream> {
             #where_clause;
 
         #[automatically_derived]
-        impl #impl_generics crate::enum_run::EnumRun for #ident #ty_generics #where_clause {
+        impl #impl_generics ::seldom_enum_run::EnumRun for #ident #ty_generics #where_clause {
             type Systems = #systems_ident #impl_generics;
             type Given = #given;
             type Output = #output;
